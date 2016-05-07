@@ -13,3 +13,31 @@ git checkout <commit id> : to temporarily reverse history to this particular com
 
 
 
+Lesson 2
+
+ls -a : to see hidden files
+git init : run this command in a directory that you want to transform into a repository. Ads .git file.
+git status : check repository's status; shows the list of files changed since the last commit.
+git add <file> : to add a commit to the staging area
+git reset HEAD <file> : to unstage
+git commit : to commit and comment from the editor of choice
+git commit -m "<comment>" : to commit and comment from the command line
+git diff : this command with no arguments compares working directory to the staging area. It will show all the changes that are not staged. Usefull, if you don't remember your last changes that are not added to the staging area.
+git diff --staged : compares staging are with the repository. Usefull if you want to double check the changes you are going to commit.
+git reset --hard : discards changes from the working directory of staging area.
+git branch <name> : create a new branch.
+git checkout <branch> : move to a specific branch.
+git log --graph --oneline <branch> <branch> : shows graphic representation of 2 branches.
+git checkout -b <new_branch_name> : from lesson "detached HEAD revisited". In case you made a commit that is not included in any branch, you might want to create a new branch. Otherwise, if you checkout an existing branch, this commit will be lost.
+git show <commit id> : shows changes between specified commit and its parrent. Useful if the id of the parent commit is not known.
+git branch -d <branch name> : deletes a specified branch. If this branch is not merged with another one, its commits will be unreachable after deletion and then lost!
+
+To merge two branches:
+1. git checkout <branch1>
+2. git merge <branch2> <branch1> : these two commands merge branch2 into branch1. It is important to checkout branch1 before merging.
+3. if there are conflicts, open the file, resolve them and save the file.
+4. git add <file>
+5. git commit
+
+
+
