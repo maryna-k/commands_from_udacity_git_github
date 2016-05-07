@@ -1,1 +1,1 @@
-# Commands From Uacity Git Github
+# Commands From Udacity Git Github
