@@ -41,3 +41,19 @@ To merge two branches:
 
 
 
+
+
+
+Lesson 3
+
+git remote : shows current remotes
+git remote add <name of the remote (origin)> <URL of the remote> : adds remotes
+git remote -v : shows URL to fetch data from and to push data to
+git push <remote to send changes to> <branch to push> : sends changes to the remote
+git pull <remote to pull from> <branch we want to pull from the remote> : pulls changes from the remote (the local branch that pulled into should be checked out)
+
+To fork a GitHub repository:
+1. fork a repository on GitHub website
+2. git clone <URL of your fork> : clone your fork to your local repository. When the repository is cloned, git automatically sets up a remote.
+ 
+git fetch <remote name>: allows to update the master/origin branch without updating local master branch
