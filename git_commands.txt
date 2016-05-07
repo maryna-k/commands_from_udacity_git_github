@@ -1,0 +1,15 @@
+Lesson 1
+
+diff -u <file1> <file2> : compares to files.
+mkdir <dir_name> : create a directory
+git log: to get the list of commits
+git diff <commit id1> <commit id2> : compare to commits. Useful if you want to find a specific bug or change.
+git log --stat : gives statistics about which files have changes in each commit.
+git clone <URL> : clone an existing repository
+git clone <URL> <name of the directory> : the same as the previous command except that you can specify the name of the directory. 
+git checkout <commit id> : to temporarily reverse history to this particular commit. Useful if there is a bug, but we are not sure in which commit it was introduced.
+
+
+
+
+
